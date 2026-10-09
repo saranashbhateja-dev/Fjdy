@@ -1,0 +1,8 @@
+{
+  "appId": "com.saransh.technicalbuilderos",
+  "appName": "Technical Builder OS",
+  "webDir": ".",
+  "server": {
+    "androidScheme": "https"
+  }
+}

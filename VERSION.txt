@@ -1,0 +1,4 @@
+Technical Builder OS
+Version 1.1.2
+Final PC default port: 3001
+Curriculum source: RC-4 canonical dataset

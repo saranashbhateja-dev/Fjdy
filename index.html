@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#4f46e5">
+  <meta name="description" content="Technical Builder OS — a local-first mastery, projects, research and builder system.">
+  <title>Technical Builder OS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script>
+    try { if (window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform()) document.body.classList.add("native-app"); } catch (_) {}
+  </script>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="brandmark">TB</div>
+        <div>
+          <h1>Technical Builder OS</h1>
+          <div class="mu">Capability over completion · Smart overkill · Free-first</div>
+        </div>
+      </div>
+      <div class="clk">
+        <div class="clkt" id="live-clock">--:--:--</div>
+        <div class="mu" id="live-date">Loading…</div>
+        <div class="pill" id="sync-pill"><i></i><span>Local</span></div>
+      </div>
+    </header>
+
+    <nav id="main-nav"></nav>
+    <main id="app"></main>
+    <div class="footer-note">No fixed dates. No calendar. Progress follows prerequisites, evidence and mastery.</div>
+  </div>
+
+  <div class="modal-wrap" id="modal-wrap" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-head"><div id="modal-title"></div><button class="modal-close" onclick="closeModal()">Close</button></div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

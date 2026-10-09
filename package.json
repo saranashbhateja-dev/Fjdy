@@ -1,0 +1,22 @@
+{
+  "name": "technical-builder-os",
+  "version": "1.1.2",
+  "private": true,
+  "description": "Technical Builder OS — local-first personal learning and builder operating system",
+  "scripts": {
+    "start": "node server.js",
+    "cap:sync": "npx cap sync android",
+    "android": "npx cap open android",
+    "android:build": "npx cap sync android && cd android && gradlew.bat assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.0.0",
+    "@capacitor/core": "8.0.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.0.0"
+  }
+}
